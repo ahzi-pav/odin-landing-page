@@ -34,12 +34,12 @@ body {
 .container {
     height: 300px;
     margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .container.first {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #1f2937; 
     color: #e5e7eb;
     flex: auto;
@@ -68,4 +68,29 @@ body {
 .first-img {
     width: 380px;
     text-align: center;
+}
+
+.container.second {
+    text-align: center;
+}
+
+.container.second .content{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.container.second .title {
+    font-size: 36px;
+    color: #1f2937;
+    font-weight: bolder;
+}
+
+.container.second .content .item {
+    width: 140px;
+}
+
+.img-list {
+    width: 140px;
+    height: 140px;
 }
