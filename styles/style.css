@@ -32,14 +32,14 @@ body {
 }
 
 .container {
-    height: 300px;
+    display: flex;
+    height: 400px;
     margin: 0;
+    justify-content: center;
+    align-items: center;
 }
 
 .container.first {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-color: #1f2937; 
     color: #e5e7eb;
     flex: auto;
@@ -57,7 +57,7 @@ body {
     width: 380px;
 }
 
-.button {
+.container.first .button {
     background-color: #3882f6;
     color: #f9faf8;
     width: 90px;
@@ -71,13 +71,16 @@ body {
 }
 
 .container.second {
-    text-align: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
 }
 
 .container.second .content{
     display: flex;
     justify-content: center;
-    gap: 40px;
+    align-items: center;
+    gap: 50px;
 }
 
 .container.second .title {
@@ -88,9 +91,69 @@ body {
 
 .container.second .content .item {
     width: 140px;
+    text-align: center;
 }
 
 .img-list {
     width: 140px;
     height: 140px;
+}
+
+.container.third {
+    background-color: #e5e7eb;
+}
+
+.container.third .content {
+    width: 720px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container.third .quote {
+    font-size: 36px;
+    font-style: italic;
+}
+
+.container.third .author {
+    font-weight: bold;
+    font-size: 24px;
+    color: #1f2937;
+    margin-left: auto;
+}
+
+.container.fourth .content {
+    display: flex;
+    height: 150px;
+    width: 1200px;
+    background-color: #3882f6;
+    color: #f9faf8;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+    border-radius: 10px;
+}
+
+.container.fourth .button {
+    background-color: #3882f6;
+    color: #f9faf8;
+    width: 90px;
+    height: 30px;
+    border-radius: 10px;
+    border-color: #f9faf8;
+}
+
+.container.fourth .content .text .title {
+    margin: 0px;
+}
+
+.container.fourth .content .text .description {
+    margin: 0px;
+}
+
+.container.fifth {
+    background-color: #1f2937;
+    color: #f9faf8;
+    height: 80px;
 }
